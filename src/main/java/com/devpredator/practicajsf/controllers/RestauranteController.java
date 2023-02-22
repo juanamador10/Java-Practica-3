@@ -13,6 +13,10 @@ import com.devpredator.practicajsf.services.RestauranteService;
 @ViewScoped
 public class RestauranteController {
 	private List<Restaurante> restaurantes;
+	/**
+	 * Lista de Restaurantes Filtrados
+	 */
+	private List<Restaurante> restaurantesFiltrados;
 
 	private RestauranteService restauranteService = new RestauranteService();
 
@@ -31,6 +35,20 @@ public class RestauranteController {
 
 	public void setRestaurantes(List<Restaurante> restaurantes) {
 		this.restaurantes = restaurantes;
+	}
+
+	/**
+	 * @return the restauranteFiltrados
+	 */
+	public List<Restaurante> getRestauranteFiltrados() {
+		return restaurantesFiltrados;
+	}
+
+	/**
+	 * @param restauranteFiltrados the restauranteFiltrados to set
+	 */
+	public void setRestauranteFiltrados(List<Restaurante> restauranteFiltrados) {
+		this.restaurantesFiltrados = restauranteFiltrados;
 	}
 
 }
