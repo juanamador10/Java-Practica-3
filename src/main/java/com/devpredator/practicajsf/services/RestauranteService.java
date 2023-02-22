@@ -62,7 +62,7 @@ public class RestauranteService {
 		gerente_4.setPrimerApellido("Warren");
 		gerente_4.setSegundoApellido("Smith");
 		
-		starbucks.setNombre("Domino's Pizza");
+		starbucks.setNombre("Starbucks");
 		starbucks.setDireccion("Heroico Colegio Militar 101");
 		starbucks.setPais("México");
 		starbucks.setGerente(gerente_4);
